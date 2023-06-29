@@ -1,0 +1,95 @@
+body {
+  background-image: url('https://i.gifer.com/133C.gif');
+  background-color: black;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.container:before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 120%;
+background-color: black;
+opacity: 0.7;
+z-index: -1;
+}
+
+h2 {
+  color: #00ff00;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+input[type='text'],
+input[type='number'],
+textarea {
+  background-color: black;
+  color: #00ff00;
+  border: none;
+  border-bottom: 7px groove #00ff00;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  outline: none;
+  width: 300px;
+}
+
+input[type='text']::placeholder,
+input[type='number']::placeholder,
+textarea::placeholder {
+  color: #00ff00;
+}
+
+button {
+  background-color: #00ff00;
+  color: #000000;
+  border: none;
+  border-radius: 5px; 
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  font-family: 'Courier New', monospace;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;
+  color: #04fa04; /* Adicionado para garantir que as letras permaneçam pretas ao passar o mouse */
+}
+
+textarea {
+  height: 100px;
+}
+
+label {
+  color: #00ff00;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: left;
+  width: 300px;
+}
+
+.success-message {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
